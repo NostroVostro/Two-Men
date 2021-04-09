@@ -1,0 +1,21 @@
+
+.input-container {
+    margin: 0 auto;
+    width: 600px;
+}
+
+
+textarea {
+    resize: none;
+}
+
+#email-input {
+    width: 300px;
+    height: 25px;
+}
+
+#message-input {
+    box-sizing: border-box;
+    width: 300px;
+    height: 200px;
+}

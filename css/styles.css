@@ -98,19 +98,25 @@ p {
     border-radius: 50%;
 }
 
-#creator-card {
+#creator-section {
+    
+}
+
+.creator-card {
     display: flex;
     flex-direction: row;
 }
 
-#creator-head {
-    order: 1;
-    padding-right: 100px;
-    margin-right: 100px;
-    text-decoration: none;
+.creator-card-two {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
 }
 
-#creator-head a {
+.creator-head {
+}
+
+.creator-head a {
     text-decoration: none;
 }
 
@@ -118,10 +124,48 @@ p {
     order: 3
 }
 
-#prof-picture {
-    margin-right: 20px;
+#creator-head-one {
+    order: 1;
+    padding-right: 100px;
+    margin-right: 100px;
+    text-decoration: none;
+}
+
+#creator-head-two {
+    margin: 0px;
+    order: 1;
+    padding-top: 16px;
+    text-decoration: none;
+}
+
+#prof-picture-one {
     order: 0;
+}
+
+#prof-picture-two {
+    order: 2;
+}
+
+@keyframes imgBubble {
+    from { width: 64; height: 64; }
+    to { width: 96; height: 96; }
+}
+
+.prof-picture {
+    margin-right: 20px;
+    margin-left: 20px;
     width: 64px;
     height: 64px;
     border-radius: 50%;
+}
+
+img:hover {
+    animation-name: "imgBubble";
+    animation-duration: 0.15s;
+    animation-fill-mode: forwards;
+}
+
+#creator-section {
+    display:flex;
+    flex-direction: column;
 }
